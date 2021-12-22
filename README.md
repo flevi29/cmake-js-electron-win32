@@ -1,6 +1,5 @@
 # Test for cmake-js + electron + node-addon-api + electron-packager + win32
 
-## Run this on Windows
 ```
 npm i
 npm run pack
