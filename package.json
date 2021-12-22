@@ -1,0 +1,36 @@
+{
+  "name": "cmake-js-electron-win32",
+  "version": "0.0.1",
+  "description": "cmake-js + electron + node-addon-api win32 test",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "install": "cmake-js compile",
+    "app": "electron src/index.js",
+    "pack": "node electron-packager-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FLevent29/cmake-js-electron-win32.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FLevent29/cmake-js-electron-win32/issues"
+  },
+  "homepage": "https://github.com/FLevent29/cmake-js-electron-win32#readme",
+  "cmake-js": {
+    "runtime": "electron",
+    "runtimeVersion": "16.0.5",
+    "arch": "x64"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0"
+  },
+  "devDependencies": {
+    "cmake-js": "6.3.0",
+    "electron": "16.0.5",
+    "electron-packager": "^15.4.0",
+    "node-addon-api": "4.2.0"
+  }
+}
